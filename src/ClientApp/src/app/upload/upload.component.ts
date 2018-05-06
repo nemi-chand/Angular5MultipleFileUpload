@@ -70,7 +70,6 @@ export class UploadComponent {
           reportProgress: true,
         });
 
-        let selectedItem = this.uploader.queue.find(s => s.id == id);
         this.http.request(uploadReq).subscribe(event => {
           if (event.type === HttpEventType.UploadProgress) {           
             selectedFile.progress = Math.round(100 * event.loaded / event.total);

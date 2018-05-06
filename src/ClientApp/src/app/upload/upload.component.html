@@ -5,7 +5,7 @@
     <!-- Example: nv-file-select="" uploader="{Object}" options="{Object}" filters="{String}" -->
     <input type="file" id="file" uploader="uploader" multiple (change)="onSelectChange($event)" /><br />
     <div id="result"></div>
-    <div class="dropzone" appDnd (filesChangeEmiter)="onFilesChange($event)" (filesInvalidEmiter)="onFileInvalids($event)" [allowed_extensions]="['zip','jpg','png']">
+    <div class="dropzone" appDnd (filesChangeEmiter)="onFilesChange($event)" (filesInvalidEmiter)="onFileInvalids($event)" [allowed_extensions]="['zip','jpg','png','jpeg','rar','JPG']">
       <div style="height:100px;" class="text-wrapper">
         <div class="centered">Drop your file here!</div>
       </div>
